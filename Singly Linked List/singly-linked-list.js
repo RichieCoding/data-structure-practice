@@ -53,6 +53,18 @@ class SinglyLinkedList {
     return current
   }
 
+  shift() {
+    if (!this.head) return undefined
+    let previousHead = this.head
+    this.head = currentHead.next
+    this.length--
+    if (this.length === 0) {
+      this.head = null
+      this.tail = null
+    }
+    return previousHead
+   }
+
 
 }
 
